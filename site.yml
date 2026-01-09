@@ -1,0 +1,9 @@
+---
+- name: Despliegue de nodo mediante roles
+  hosts: compute-0-3
+  become: yes
+  roles:
+    - common
+    - ldap
+    - nfs
+    - slurm

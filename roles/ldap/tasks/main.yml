@@ -1,0 +1,10 @@
+- name: Sincronizar configuracion LDAP
+  copy:
+    src: /etc/ldap.conf
+    dest: /etc/ldap.conf
+
+- name: Configurar nsswitch
+  lineinfile:
+    path: /etc/nsswitch.conf
+    regexp: '^passwd:'
+    line: 'passwd:         compat ldap'

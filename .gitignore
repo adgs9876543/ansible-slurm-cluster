@@ -1,0 +1,7 @@
+.*
+!/.gitignore
+!/meta/
+*.sh
+*.log
+*.dat
+*.ldif

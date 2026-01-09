@@ -1,0 +1,15 @@
+galaxy_info:
+  author: adgs9876543
+  description: Automatización de cluster Slurm con LDAP y NFS
+  company: Universidad
+  license: MIT
+  min_ansible_version: "2.1"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - hpc
+    - slurm
+    - cluster
+dependencies: []

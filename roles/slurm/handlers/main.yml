@@ -1,0 +1,4 @@
+- name: restart_slurm
+  service:
+    name: slurmd
+    state: restarted

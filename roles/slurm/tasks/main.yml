@@ -1,0 +1,12 @@
+- name: Copiar clave Munge
+  copy:
+    src: /etc/munge/munge.key
+    dest: /etc/munge/munge.key
+    owner: munge
+    mode: '0400'
+
+- name: Copiar config de Slurm
+  copy:
+    src: /etc/slurm/slurm.conf
+    dest: /etc/slurm/slurm.conf
+  notify: restart_slurm

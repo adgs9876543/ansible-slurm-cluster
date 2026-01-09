@@ -1,0 +1,5 @@
+- name: Instalar paquetes necesarios
+  apt:
+    name: [slurmd, munge, nfs-common, autofs, libnss-ldap, ldap-utils]
+    state: present
+    update_cache: yes
